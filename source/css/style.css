@@ -36,3 +36,13 @@ a{
 .page_title{
     text-align:center;
 }
+
+.brand-logo img{
+    height:100%;
+    float:left;
+}
+.brand-logo p{
+    float:left;
+    margin:0;
+    margin-left:10px;   
+}

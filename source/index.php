@@ -31,6 +31,12 @@ if(isset($_GET['key'])){
     <body>
         
         <nav class=''>
+            <div class="nav-wrapper container white-text" >
+                <div class="brand-logo">
+                    <img src="res/media_logo.png" />
+                    <p>Media Dashboard</p>
+                </div>
+            </div>
         </nav>
         
         <main id="main" class="container">
