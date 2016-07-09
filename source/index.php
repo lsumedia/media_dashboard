@@ -11,6 +11,10 @@ require('authenticator.php');
 
 $auth = new authenticator();
 
+if(isset($_GET['key'])){
+    header('location:.');   
+}
+
 ?>
 <html>
     <head>
@@ -36,7 +40,9 @@ $auth = new authenticator();
                 ?>
             <div class="page_link col s6 l3" >
                 <div class="page_icon">
-                    
+                    <a href="<?= $auth->append_key($page['url']) ?>" target="_blank">
+                        <img src="<?= $page['thumbnail'] ?>" alt="<?= $page['title'] . ' icon' ?>" />
+                    </a>
                 </div>
                 <div class="page_title">
                     <a href="<?= $auth->append_key($page['url']) ?>" target="_blank"><?= $page['title'] ?></a>

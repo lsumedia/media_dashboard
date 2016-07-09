@@ -15,3 +15,24 @@ nav{
 #main{
     margin-top:5em;
 }
+
+a{
+    color:inherit;
+}
+
+.page_icon{
+    width:120px;
+    height:120px;
+    overflow:hidden;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10px;
+}
+
+.page_icon img{
+    width:120px;
+}
+
+.page_title{
+    text-align:center;
+}
