@@ -33,7 +33,7 @@ if(isset($_GET['key'])){
         <nav class=''>
             <div class="nav-wrapper container white-text" >
                 <div class="brand-logo">
-                    <img src="res/media_logo.png" />
+                    <img src="res/media_reverse.png" />
                     <p>Media Dashboard</p>
                 </div>
             </div>
