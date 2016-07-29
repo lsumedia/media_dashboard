@@ -41,20 +41,21 @@ if(isset($_GET['key'])){
         
         <main id="main" class="container">
             <div class="row">
-            <?php foreach($pages as $page){ 
+            <?php foreach($pages as $i => $page){ 
                     if(in_array($page['perm_name'], $auth->profile()['permissions']) || strlen($page['perm_name']) < 1){
-                ?>
-            <div class="page_link col s6 l3" >
+            ?>
+            <form method="POST" action="<?= $page['url'] ?>" id="link_form_<?= $i ?>" target="_blank"> 
+                <input type="hidden" name="key" value="<?= $auth->key ?>" />
+            </form>
+            <div class="page_link col s6 l3" onclick="document.getElementById('link_form_<?= $i ?>').submit();">
                 <div class="page_icon">
-                    <a href="<?= $auth->append_key($page['url']) ?>" target="_blank">
-                        <img src="<?= $page['thumbnail'] ?>" alt="<?= $page['title'] . ' icon' ?>" />
-                    </a>
+                    <img src="<?= $page['thumbnail'] ?>" alt="<?= $page['title'] . ' icon' ?>" />
                 </div>
                 <div class="page_title">
                     <a href="<?= $auth->append_key($page['url']) ?>" target="_blank"><?= $page['title'] ?></a>
                 </div>
             </div>
-                    <?php  }} ?>
+            <?php  }} ?>
             </div>
         </main>
         

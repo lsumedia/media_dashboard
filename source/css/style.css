@@ -37,6 +37,10 @@ a{
     text-align:center;
 }
 
+.page_link{
+    cursor:pointer;
+}
+
 .brand-logo img{
     height:86%;
     float:left;
