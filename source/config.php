@@ -29,8 +29,8 @@
 $pages = [
     
     ['url' => 'http://grovestreet.me/projects/user_manager/source/', 'perm_name' => 'manage_users', 'thumbnail' => 'res/people_black.svg', 'title' => 'User Manager'],
-    ['url' => 'http://grovestreet.me/projects/pamphlet_sso/source/admin/', 'perm_name' => 'lsutv_edit_content', 'thumbnail' => 'res/lsutv.png', 'title' => 'LSUTV CMS'],
-    ['url' => 'http://smalldisasters.co.uk/projects/lsutv/', 'perm_name' => '', 'thumbnail' => 'res/lsutv.png', 'title' => 'LSUTV Home'],
+    ['url' => 'http://grovestreet.me/projects/pamphlet_sso/source/admin/?action=plugin_vod', 'perm_name' => 'lsutv_edit_content', 'thumbnail' => 'res/lsutv.png', 'title' => 'LSUTV CMS'],
+    //['url' => 'http://smalldisasters.co.uk/projects/lsutv/', 'perm_name' => '', 'thumbnail' => 'res/lsutv.png', 'title' => 'LSUTV Home'],
     
 ];
 
