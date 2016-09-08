@@ -52,7 +52,8 @@ if(isset($_GET['key'])){
                     <img src="<?= $page['thumbnail'] ?>" alt="<?= $page['title'] . ' icon' ?>" />
                 </div>
                 <div class="page_title">
-                    <a href="<?= $auth->append_key($page['url']) ?>" target="_blank"><?= $page['title'] ?></a>
+                    <!-- <a href="<?= $auth->append_key($page['url']) ?>" target="_blank"><?= $page['title'] ?></a> -->
+                    <?= $page['title'] ?>
                 </div>
             </div>
             <?php  }} ?>
